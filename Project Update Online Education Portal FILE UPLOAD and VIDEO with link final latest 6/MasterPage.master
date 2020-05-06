@@ -1,0 +1,69 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Welcome To Online Education Portal</title>
+
+    <link rel="stylesheet" href="men_web_home.css" type="text/css" />
+</head>
+<body>
+
+
+    <form id="form1" runat="server">
+
+
+    <div id="container">
+        <header id="page_header">
+            <img src="images/imgportal.jpg" alt="logo" width='232' height='100' class="logo" />
+            <h1 class="head_text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WELCOME TO ONLINE EDUCATION PORTAL</h1>
+        </header>
+    </div>
+
+    <div id="container">
+        <div id="header">
+
+        </div>
+        <div id="menuBar">
+            <div id='cssmenu'>
+                <asp:Menu ID="Menu1" runat="server" Height="18px" Orientation="Horizontal" RenderingMode="Table" StaticSubMenuIndent="16px" Width="1100px">
+                    <Items>
+                        <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/Main.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="ADMIN" Value="ADMIN">
+                            <asp:MenuItem Text="LOGIN" Value="LOGIN"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="STUDENT" Value="STUDENT">
+                            <asp:MenuItem Text="REGISTER" Value="REGISTER"></asp:MenuItem>
+                            <asp:MenuItem Text="LOGIN" Value="LOGIN"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="FACULTY" Value="FACULTY">
+                            <asp:MenuItem Text="LOGIN" Value="LOGIN"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="COMPETITIONS" Value="COMPETITIONS">
+                            <asp:MenuItem Text="BLITZKREIG" Value="BLITZKREIG"></asp:MenuItem>
+                            <asp:MenuItem Text="PHOTO-FUNIA" Value="PHOTO-FUNIA"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="ADMISSION" Value="ADMISSION">
+                            <asp:MenuItem Text="DOWNLOAD FORM" Value="DOWNLOAD FORM"></asp:MenuItem>
+                            <asp:MenuItem Text="PROCEDURE" Value="PROCEDURE"></asp:MenuItem>
+                            <asp:MenuItem Text="FEE STRUCTURE" Value="FEE STRUCTURE"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="CONTACT US" Value="CONTACT US"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div>
+    
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

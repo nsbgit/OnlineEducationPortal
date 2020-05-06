@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/images/8025556104_8b6ab9be3f_oj.png</ImageUrl>
+    <AlternateText>invalid</AlternateText>
+    <NavigateUrl></NavigateUrl>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/7457933352_8daaf8ee06_o.jpg</ImageUrl>
+    <AlternateText>invalid</AlternateText>
+    <NavigateUrl></NavigateUrl>
+  </Ad>
+
+
+</Advertisements>
